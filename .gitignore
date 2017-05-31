@@ -1,4 +1,5 @@
 .recommenders
 .metadata
-.RemoteSystemsTempFiles
+RemoteSystemsTempFiles
 Servers
+*.class
