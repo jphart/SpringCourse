@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Next Page</title>
+</head>
+<body>
+
+<h1>This is the next page...</h1>
+
+<ul th:inline="text">
+	<li>[[${person.firstname}]] [[${person.lastname}]]</li>
+	<li>Email: [[${person.email}]]</li>
+	<li>Age: [[${person.age}]]</li>
+</ul>
+
+</body>
+</html>
