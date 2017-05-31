@@ -7,10 +7,10 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.qa.beans.Customer;
 
-public class CustomerRowMapper implements RowMapper {
+public class CustomerRowMapper implements RowMapper<Customer> {
 
 	@Override
-	public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+	public Customer mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Customer customer = new Customer();
 		
 		customer.setCustomerId(rs.getInt("customerId"));

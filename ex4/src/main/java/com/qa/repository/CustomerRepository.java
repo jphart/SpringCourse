@@ -34,22 +34,6 @@ public class CustomerRepository {
 	public List<Customer> findAllCustomers(){
 		
 		return jdbcTemplate.query("select * from customer", new CustomerRowMapper());
-		
-		//List<Customer> customers = new ArrayList<Customer>();
-
-		
-		
-		//List<Map<String, Object>> rows = jdbcTemplate.queryForList("SELECT * from customer");
-//		
-//		for (Map<String, Object> row : rows) {
-//			Customer customer = new Customer();
-//			customer.setCustomerId((int)(row.get("customerId")));
-//			customer.setName((String)row.get("name"));
-//			customer.setAddress((String)row.get("address"));
-//			customers.add(customer);
-//		}
-
-		//return customers;
 	}
 	
 	public int deleteCustomerById(int customerId){
